@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Video Downloader and Renamer",
+  "version": "1.0",
+  "description": "This extension downloads video files from a website and renames them appropriately.",
+  "permissions": [
+    "activeTab",
+    "downloads"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.wallstreetprep.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
