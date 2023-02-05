@@ -1,4 +1,4 @@
-# WSP Downloader Chrome Extension
+# WSP Chrome Extension
 
 ## File Descriptions
 
